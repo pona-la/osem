@@ -143,7 +143,7 @@ module ApplicationHelper
       conference.try(:organization).try(:name) || ENV.fetch('OSEM_NAME', 'OSEM')
     )
     link_to(
-      image_tag('suno.png'),
+      image_tag('suno.svg', height: '48px'),
       root_path,
       class: 'navbar-brand',
       title: 'suno pi toki pona | toki pona day'
