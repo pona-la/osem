@@ -80,10 +80,20 @@ html {
 
 .list-group-item,
 .well,
+.panel,
+.panel-heading,
 #header {
     background-color: var(--secondary-background-color) !important;
-    color: var(--secondary-foreground-color);
-    border-color: var(--secondary-border-color);
+    color: var(--secondary-foreground-color) !important;
+    border-color: var(--secondary-border-color) !important;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: var(--focus-link-text-color);
+    background-color: var(--focus-background-color);
+    border: var(--border-width) solid var(--focus-border-color);
 }
 
 .nav.nav-tabs {
@@ -132,7 +142,8 @@ body {
 #chart-9,
 #chart-10,
 #chart-11,
-#chart-12 {
+#chart-12,
+#abstract-count {
     color: var(--secondary-foreground-color) !important;
 }
 
