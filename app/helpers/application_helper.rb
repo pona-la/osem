@@ -143,10 +143,10 @@ module ApplicationHelper
       conference.try(:organization).try(:name) || ENV.fetch('OSEM_NAME', 'OSEM')
     )
     link_to(
-      link_text,
+      image_tag('suno.png'),
       root_path,
       class: 'navbar-brand',
-      title: 'Open Source Event Manager'
+      title: 'suno pi toki pona | toki pona day'
     )
   end
 
