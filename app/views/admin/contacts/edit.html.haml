@@ -55,4 +55,12 @@
         = f.url_field :youtube, class: 'form-control'
         %span.help-block
           This will appear in the social media section as a link to the YouTube channel for your conference.
+        = f.label :discord, 'Discord URL'
+        = f.url_field :discord, class: 'form-control'
+        %span.help-block
+          This will appear in the social media section as a link to the Discord server for your conference.
+        = f.label :twitch, 'Twitch URL'
+        = f.url_field :twitch, class: 'form-control'
+        %span.help-block
+          This will appear in the social media section as a link to the Twitch channel for your conference.
       = f.submit nil, class: 'btn btn-primary'

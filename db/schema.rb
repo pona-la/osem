@@ -126,6 +126,8 @@ ActiveRecord::Schema.define(version: 20181229233811) do
     t.string "mastodon"
     t.string "youtube"
     t.string "blog"
+    t.string "discord"
+    t.string "twitch"
   end
 
   create_table "delayed_jobs", force: :cascade do |t|

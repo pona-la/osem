@@ -24,6 +24,12 @@
           - if contact.youtube?
             = link_to "#{ contact.youtube }" do
               %i.fa-brand.fa-youtube.fa-4x
+          - if contact.discord?
+            = link_to "#{ contact.discord }" do
+              %i.fa-brand.fa-discord.fa-4x
+          - if contact.twitch?
+            = link_to "#{ contact.twitch }" do
+              %i.fa-brand.fa-twitch.fa-4x
           - if contact.email?
             = mail_to "#{ contact.email }" do
               %i.fa-solid.fa-envelope.fa-4x
