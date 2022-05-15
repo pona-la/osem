@@ -82,6 +82,7 @@ html {
 .well,
 .panel,
 .panel-heading,
+.modal-content,
 #header {
     background-color: var(--secondary-background-color) !important;
     color: var(--secondary-foreground-color) !important;
@@ -143,7 +144,8 @@ body {
 #chart-10,
 #chart-11,
 #chart-12,
-#abstract-count {
+#abstract-count,
+legend {
     color: var(--secondary-foreground-color) !important;
 }
 
