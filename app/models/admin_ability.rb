@@ -192,6 +192,10 @@ class AdminAbility
                              commercialable_id:   Event.where(program_id: Program.where(conference_id: conf_ids_for_cfp).pluck(:id)).pluck(:id)
     can :index, Comment, commentable_type: 'Event',
                          commentable_id:   Event.where(program_id: Program.where(conference_id: conf_ids_for_cfp).pluck(:id)).pluck(:id)
+    can :manage, Survey, surveyable_type: 'Conference',
+                         surveyable_id:   conf_ids_for_cfp
+    can :manage, SurveyQuestion, survey: { surveyable_type: 'Conference',
+                                           surveyable_id:   conf_ids_for_cfp }
 
     # Abilities for Role (Conference resource)
     can [:index, :show], Role do |role|
