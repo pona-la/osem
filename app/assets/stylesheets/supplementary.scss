@@ -203,3 +203,7 @@ table.datatable > tfoot > tr > td {
 .navbar-brand {
     padding: 0;
 }
+
+.table .table, table.datatable .table, .table table.datatable, table.datatable table.datatable {
+  background: initial;
+}
